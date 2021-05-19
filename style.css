@@ -1,0 +1,67 @@
+.herosection {
+    background-image: url('images/IMG_5057.jpg');
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+  
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction:row;
+    width: 100%;
+  }
+  .animation {
+    text-align:center;
+    animation-name:animation;
+    animation-duration:5s;
+  }
+  @keyframes animation {
+    0%   {background-color:red;}
+    25%  {background-color:purple;}
+    50%  {background-color:yellow;}
+    75%  {background-color:blue;}
+  }
+  .projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+body {
+    background-color: grey;
+}
+.myDiv {
+  background-color:light grey
+  text-align:center;
+  margin: 15px;
+  }
+  ul{
+    list-style-type:none;
+    margin:0 ;
+    padding: 0;
+    overflow:hidden;
+    background-color:#333 ;
+  }
+  li{
+    float: center;
+  }
+  li a {
+  display: block;
+  color:white;
+  text-align:center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+  li a:hover {
+    background-color: #111;
+  }
+  @media only screen and (max-width: 600px) {
+    .projects {
+       flex-direction: column;
+     }
+   }
